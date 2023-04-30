@@ -1,5 +1,5 @@
 .navbar-nav {
-  padding-right: 20%;
+  padding-right: 10%;
 }
 li a {
   margin-right: 20px;
@@ -7,7 +7,10 @@ li a {
 ul {
   font-size: 18px;
 }
-.navbar-brand {
+.logo {
   padding-left: 100px;
   padding-right: 20px;
+}
+.shopping {
+  padding-right: 200px;
 }
