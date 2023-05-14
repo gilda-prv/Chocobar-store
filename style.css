@@ -14,3 +14,49 @@ ul {
 .shopping {
   padding-right: 200px;
 }
+/* sidebar*/
+.side {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+.text-sidebar {
+  font-size: 15px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+}
+.sidebar {
+  width: 20%;
+  box-sizing: border-box;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.img-sidebar img {
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+.img-sidebar {
+  display: flex;
+  flex-direction: column;
+}
+.img-tag {
+  margin-right: -140px;
+  margin-top: 120px;
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  display: flex;
+  flex-direction: column;
+}
+.about {
+  margin-top: -50%;
+  margin-right: 53%;
+  display: flex;
+  flex-direction: column;
+}
+.text-1 {
+  line-height: 30px;
+}
