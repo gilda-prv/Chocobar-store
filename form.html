@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/8fae751bd1.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- css -->
+    <link rel="stylesheet" href="form.css" />
+    <title>REGISTRATION FORM</title>
+  </head>
+  <body>
+    <div id="App">
+      <div class="container">
+        <div class="grid">
+          <div class="box1" id="box1">
+            <h1>REGISTRATION FORM</h1>
+            <form action="" name="form1" onsubmit="return validation()">
+              <p id="result"></p>
+              <!-- username box -->
+              <div class="inputbox">
+                <input type="text" id="username" />
+                <span>Username</span>
+                <p>
+                  <i
+                    class="fa-regular fa-user fa-sm"
+                    id="icon"
+                    style="color: #f9f9fa"
+                  ></i>
+                </p>
+              </div>
+              <!-- email box -->
+              <div class="inputbox">
+                <input type="email" id="email" />
+                <span>email</span>
+                <p>
+                  <i
+                    class="fa-regular fa-envelope fa-sm"
+                    id="icon"
+                    style="color: #f9f9fa"
+                  ></i>
+                </p>
+              </div>
+              <!-- password box -->
+              <div class="inputbox" id="form-element">
+                <input type="password" id="password" />
+                <span>password</span>
+                <p class="toggle-password" @click="changeEye">
+                  <i
+                    class="fa fa-lock fa-sm"
+                    id="icon"
+                    style="color: #f9f9fa"
+                  ></i>
+                </p>
+              </div>
+              <!-- confrim password box -->
+              <div class="inputbox">
+                <input type="password" id="confrim" />
+                <span>confrim password</span>
+                <p>
+                  <i
+                    class="fa-solid fa-lock fa-sm"
+                    id="icon"
+                    style="color: #f9f9fa"
+                  ></i>
+                </p>
+              </div>
+              <!-- region -->
+              <span class="regionboxs">select region</span>
+              <div class="regionbox">
+                <select id="region">
+                  <option value="London">تهران</option>
+                  <option value="Newyork">گیلان</option>
+                  <option value="Sydney">شیراز</option>
+                  <option value="Rome">اصفهان</option>
+                </select>
+              </div>
+              <input type="submit" value="submit" />
+            </form>
+          </div>
+          <div class="box2">
+            <img src="img/form.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

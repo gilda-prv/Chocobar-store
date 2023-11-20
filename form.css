@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  background: rgb(235, 234, 239);
+  background: linear-gradient(
+    212deg,
+    rgba(235, 234, 239, 1) 0%,
+    rgba(253, 253, 253, 1) 100%
+  );
+}
+.container {
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.box1 {
+  padding: 70px 140px;
+}
+.box1 h1 {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 300;
+  color: #9c5429;
+}
+.box1 form {
+  position: absolute;
+  inset: 4px;
+  padding: 80px 140px;
+  border-radius: 8px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 70px;
+  /* display: none; */
+}
+/* inputbox */
+.box1 form .inputbox {
+  position: relative;
+  width: 300px;
+  margin-top: 35px;
+}
+.box1 form .inputbox input {
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  color: #f8f7f9;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  z-index: 10;
+  cursor: pointer;
+}
+.box1 form .inputbox span {
+  position: absolute;
+  left: 0;
+  padding: 20px 0px 10px;
+  pointer-events: none;
+  color: #9c5429;
+  font-size: 1em;
+  transition: 0.5s;
+}
+.box1 form .inputbox input:valid ~ span,
+.box1 form .inputbox input:focus ~ span {
+  color: #9c5429;
+  font-size: 0.75em;
+  transform: translateY(-34px);
+}
+.box1 form .inputbox p {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #897f63;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: 0.5s;
+  pointer-events: none;
+}
+/* icon */
+#icon {
+  margin-top: 22px;
+  display: flex;
+  justify-content: right;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.box1 form .inputbox input:valid ~ p,
+.box1 form .inputbox input:focus ~ p {
+  height: 44px;
+}
+.box1 form input[type="submit"] {
+  outline: none;
+  background: transparent;
+  border: #897f63 solid 2px;
+  padding: 15px 75px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 0.9em;
+  border-radius: 20px;
+  font-weight: 600px;
+  width: 15%;
+  margin-top: 50px;
+}
+.box1 form input[type="submit"]:active {
+  opacity: 0.8;
+}
+.box1 form input[type="submit"]:hover {
+  background-color: #897f63;
+  color: #fff;
+}
+/* regionbox */
+select {
+  appearance: none;
+  padding: 0 1em;
+  outline: 10px red;
+  border: 0;
+  box-shadow: none;
+  flex: 1;
+  color: #30511a;
+  background-image: none;
+  cursor: pointer;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+.regionbox select {
+  width: 50%;
+  height: 48px;
+  background: transparent;
+  border: #897f63 solid 2px;
+  box-shadow: none;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: 0.5s;
+  font-size: 0.9em;
+  letter-spacing: 0.05em;
+  z-index: 10;
+}
+/* Custom Select wrapper */
+.regionbox {
+  position: relative;
+  display: flex;
+  width: 19em;
+  height: 3em;
+  border-radius: 0.25em;
+  margin-top: 20px;
+}
+.regionbox select::selection {
+  border: #897f63 solid 2px;
+}
+/* Arrow */
+.regionbox::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.9em;
+  background-color: #897f63;
+  transition: 0.25s all ease;
+  pointer-events: none;
+}
+/* Transition */
+.regionbox:hover::after {
+  color: #f6f6f7;
+}
+.regionboxs {
+  margin-top: 30px;
+  pointer-events: none;
+  color: #9c5429;
+  font-size: 0.8em;
+  transition: 0.5s;
+}
+/* box2 */
+.box2 {
+  padding-left: 200px;
+}
+/* result */
+#result {
+  margin-top: 100px;
+  color: #9c5429;
+}
+@media only screen and (max-width: 1440px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgb(235, 234, 239);
+    background: linear-gradient(
+      100deg,
+      rgba(235, 234, 239, 1) 0%,
+      rgba(253, 253, 253, 1) 100%
+    );
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 1fr;
+  }
+  .box1 {
+    padding: 30px 0;
+    text-align: center;
+  }
+  .box1 h1 {
+    padding-left: 35px;
+  }
+  .box2 img {
+    display: none;
+  }
+  .regionboxs {
+    position: fixed;
+    margin-top: 300px;
+  }
+  .regionbox {
+    margin-top: 50px;
+  }
+  .box1 form input[type="submit"] {
+    padding-left: 40px;
+  }
+}
