@@ -23,7 +23,7 @@ body {
   grid-template-rows: 1fr;
 }
 .box1 {
-  padding: 70px 100px;
+  padding: 70px 140px;
 }
 .box1 h1 {
   margin-top: 10px;
@@ -193,7 +193,7 @@ select::-ms-expand {
 }
 /* box2 */
 .box2 {
-  padding-left: 200px;
+  padding-left: 180px;
 }
 /* result */
 #result {
